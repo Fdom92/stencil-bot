@@ -1,0 +1,13 @@
+stencil-bot {
+  ion-app {
+    ion-footer {
+      ion-toolbar {
+        &.toolbar {
+          .toolbar-content {
+            display: inline-flex;
+          }
+        }
+      }
+    }
+  }
+}
