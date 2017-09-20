@@ -1,6 +1,6 @@
 exports.config = {
   bundles: [
-    { components: ['stencil-bot'] }
+    { components: ['stencil-bot', 'ion-bubble'] }
   ],
   collections: [
     { name: '@stencil/router' },
