@@ -7,7 +7,8 @@ import { ApiAiClient } from 'api-ai-javascript';
 })
 export class StencilBot {
 
-  @State() client: any;
+  @State() client   : any;
+  @State() messages : any;
 
   componentDidLoad() {
     this.client = new ApiAiClient({accessToken: 'MY_TOKEN'});
@@ -28,14 +29,14 @@ export class StencilBot {
     return (
       <ion-app>
         <ion-header>
-          <ion-toolbar>
+          <ion-toolbar color='primary'>
           <ion-title text-center>
               Stenciltron
           </ion-title>
           </ion-toolbar>
         </ion-header>
         <ion-content>
-          Hi from Stenciltron
+          {this.messages}
         </ion-content>
         <ion-footer>
           <ion-toolbar>
