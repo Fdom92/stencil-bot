@@ -11,10 +11,18 @@ export class IonBubble {
     @Prop() self: any;
 
     render() {
-        return (
-            <div class="speech-bubble">
-                <p>{this.message}</p>
-            </div>
-        );
+        if (this.self) {
+            return (
+                <div class="speech-bubble-self">
+                    <p>{this.message}</p>
+                </div>
+            );
+        } else {
+            return (
+                <div class="speech-bubble">
+                    <p>{this.message}</p>
+                </div>
+            );    
+        }
     }
 }

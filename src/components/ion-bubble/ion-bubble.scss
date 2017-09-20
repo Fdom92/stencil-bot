@@ -1,20 +1,26 @@
-.speech-bubble {
-	position: relative;
-	background: #00aabb;
-	border-radius: .4em;
-}
+ion-bubble {
+	.speech-bubble {
+		position: relative;
+		background: #488aff;
+		border-radius: .4em;
+		margin: 20px;
 
-.speech-bubble:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-right-color: #00aabb;
-	border-left: 0;
-	border-bottom: 0;
-	margin-top: -10px;
-	margin-left: -20px;
+		p {
+			color: white;
+			padding: 10px;
+		}
+	}
+
+	.speech-bubble-self {
+		position: relative;
+		background: white;
+		border-radius: .4em;
+		margin: 20px;
+
+		p {
+			border: 1px solid black;
+			border-radius: .4em;
+			padding: 10px;
+		}
+	}
 }
