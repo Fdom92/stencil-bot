@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@ionic/core": "0.0.2-10",
-    "@stencil/core": "0.0.5-17",
+    "@stencil/core": "0.0.5",
     "@stencil/router": "0.0.12"
   },
   "devDependencies": {
