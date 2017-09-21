@@ -42,9 +42,11 @@ export class StencilBot {
           </ion-toolbar>
         </ion-header>
         <ion-content>
-          { this.messages.map(ele => {
-            return <ion-bubble message={ele}/>
-          })}
+          <div>
+            { this.messages.map(ele => {
+              return <ion-bubble message={ele}/>
+            })}
+          </div>
         </ion-content>
         <ion-footer>
           <ion-toolbar>
