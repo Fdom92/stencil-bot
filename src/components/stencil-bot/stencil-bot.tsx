@@ -1,23 +1,26 @@
 import { Component, State } from '@stencil/core';
 import { ApiAiClient } from 'api-ai-javascript';
 
+const CLIENT_TOKEN = 'b8d5dda90b644be9961ad40d341effe2';
+
 @Component({
   tag: 'stencil-bot',
   styleUrl: 'stencil-bot.scss'
 })
 export class StencilBot {
 
-  @State() client    : any;
+  @State() client : any;
 
   componentDidLoad() {
-    this.client = new ApiAiClient({accessToken: 'MY_TOKEN'});
+    this.client = new ApiAiClient({accessToken: CLIENT_TOKEN});
   }
 
   sendMessage() {
     this.client
-      .textRequest('Alo!')
+      .textRequest(document.querySelector('input').value)
       .then((response) => {
-        console.log(response);
+        console.log('Me::', response.result.resolvedQuery);
+        console.log('Stenciltron::', response.result.fulfillment.speech);
       })
       .catch((error) => {
         console.log(error);

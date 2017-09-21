@@ -1,11 +1,7 @@
 {
-  "name": "@stencil/starter",
-  "private": true,
+  "name": "stencil-bot",
   "version": "0.0.1",
-  "description": "Stencil Starter App",
-  "files": [
-    "dist/"
-  ],
+  "description": "Chatbot built with stencil",
   "scripts": {
     "build": "stencil build --prerender",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
@@ -24,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-starter.git"
+    "url": "git+https://github.com/Fdom92/stencil-bot.git"
   },
-  "author": "Ionic Team",
+  "author": "Fernando del olmo martin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/Fdom92/stencil-bot"
   },
-  "homepage": "https://github.com/ionic-team/stencil"
+  "homepage": "https://github.com/Fdom92/stencil-bot"
 }
