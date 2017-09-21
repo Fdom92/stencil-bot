@@ -9,22 +9,26 @@ const CLIENT_TOKEN = 'b8d5dda90b644be9961ad40d341effe2';
 })
 export class StencilBot {
 
-  @State() client : any;
+  @State() client    : any;
+  @State() messages  : Array<string> = [];
+  @State() messages2 : Array<string> = [];
 
   componentDidLoad() {
     this.client = new ApiAiClient({accessToken: CLIENT_TOKEN});
   }
 
   sendMessage() {
-    this.client
-      .textRequest(document.querySelector('input').value)
-      .then((response) => {
-        console.log('Me::', response.result.resolvedQuery);
-        console.log('Stenciltron::', response.result.fulfillment.speech);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    let text = document.querySelector('input').value;
+    document.querySelector('input').value = '';
+
+    this.client.textRequest(text).then((response) => {
+      this.messages = [];
+      this.messages2.push(response.result.fulfillment.speech);
+      this.messages = this.messages2;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
   }
 
   render() {
@@ -38,10 +42,9 @@ export class StencilBot {
           </ion-toolbar>
         </ion-header>
         <ion-content>
-          <ion-bubble message="Hi" self={true}/>
-          <ion-bubble message="Alo" self={false}/>
-          <ion-bubble message="Whats Stencil?" self={true}/>
-          <ion-bubble message="Its awesome dude :)" self={false}/>
+          { this.messages.map(ele => {
+            return <ion-bubble message={ele}/>
+          })}
         </ion-content>
         <ion-footer>
           <ion-toolbar>
