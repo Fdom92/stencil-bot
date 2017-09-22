@@ -10,8 +10,8 @@ const CLIENT_TOKEN = 'b8d5dda90b644be9961ad40d341effe2';
 export class StencilBot {
 
   @State() client    : any;
-  @State() messages  : Array<string> = [];
-  @State() messages2 : Array<string> = [];
+  @State() messages  : Array<{text: string, self: boolean}> = [];
+  @State() messages2 : Array<{text: string, self: boolean}> = [];
 
   componentDidLoad() {
     this.client = new ApiAiClient({accessToken: CLIENT_TOKEN});
@@ -20,10 +20,12 @@ export class StencilBot {
   sendMessage() {
     let text = document.querySelector('input').value;
     document.querySelector('input').value = '';
-
+    this.messages = [];
+    this.messages2.push({text: text, self: true});
+    this.messages = this.messages2;
     this.client.textRequest(text).then((response) => {
       this.messages = [];
-      this.messages2.push(response.result.fulfillment.speech);
+      this.messages2.push({text: response.result.fulfillment.speech, self: false});
       this.messages = this.messages2;
     })
     .catch((error) => {
@@ -43,8 +45,8 @@ export class StencilBot {
         </ion-header>
         <ion-content>
           <div>
-            { this.messages.map(ele => {
-              return <ion-bubble message={ele}/>
+            { this.messages.map(message => {
+              return <ion-bubble message={message.text} self={message.self}/>
             })}
           </div>
         </ion-content>
