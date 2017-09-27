@@ -1,5 +1,12 @@
 stencil-bot {
   ion-app {
+    ion-content {
+      ion-scroll {
+        &.content {
+          background-color: #e6e6e6;
+        }
+      }
+    }
     ion-footer {
       ion-toolbar {
         &.toolbar {

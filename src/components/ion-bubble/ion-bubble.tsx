@@ -13,16 +13,20 @@ export class IonBubble {
     render() {
         if (this.self) {
             return (
-                <div class="speech-bubble-self">
-                    <p>{this.message}</p>
+                <div class="container-self">
+                    <div class="speech-bubble-self">
+                        <p>{this.message}</p>
+                    </div>
                 </div>
             );
         } else {
             return (
-                <div class="speech-bubble">
-                    <p>{this.message}</p>
+                <div class="container">
+                    <div class="speech-bubble">
+                        <p>{this.message}</p>
+                    </div>
                 </div>
-            );    
+            );
         }
     }
 }
