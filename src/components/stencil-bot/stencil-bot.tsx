@@ -1,4 +1,4 @@
-import { Component, State } from '@stencil/core';
+import { Component, State, Listen } from '@stencil/core';
 import { ApiAiClient } from 'api-ai-javascript';
 
 const CLIENT_TOKEN = 'b8d5dda90b644be9961ad40d341effe2';
@@ -12,6 +12,11 @@ export class StencilBot {
   @State() client    : any;
   @State() messages  : Array<{text: string, self: boolean}> = [];
   @State() messages2 : Array<{text: string, self: boolean}> = [];
+
+  @Listen('keydown.enter')
+  handleKeyDown(){
+    this.sendMessage();
+  }
 
   componentDidLoad() {
     this.client = new ApiAiClient({accessToken: CLIENT_TOKEN});
