@@ -20,6 +20,15 @@ export class StencilBot {
 
   componentDidLoad() {
     this.client = new ApiAiClient({accessToken: CLIENT_TOKEN});
+    this.client.textRequest('hello').then((response) => {
+      // Add the response message to the array
+      this.messages = [];
+      this.messages2.push({text: response.result.fulfillment.speech, self: false});
+      this.messages = this.messages2;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
   }
 
   sendMessage() {

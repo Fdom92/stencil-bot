@@ -24,11 +24,11 @@ const fileManifest = [
   },
   {
     "url": "build/app.js",
-    "revision": "107573812a75cfd39847e88ce1122ea2"
+    "revision": "f01f4361172749c6762ea2925d73b067"
   },
   {
     "url": "build/app.registry.json",
-    "revision": "a88f3cf82a74c3085bc68c2d3964eace"
+    "revision": "61c334509e66a4debf48d3587d836129"
   },
   {
     "url": "build/app/06ic4yhp.css",
@@ -231,10 +231,6 @@ const fileManifest = [
     "revision": "9ea3647b356b6bf01b832075af1942d5"
   },
   {
-    "url": "build/app/i0sod2xn.js",
-    "revision": "ffd7e6ba326bd9e6ba3cadcded60ab13"
-  },
-  {
     "url": "build/app/i9gpwjnp.css",
     "revision": "da6b9d8ddc0e6333f7e33243b8bf8dd8"
   },
@@ -297,6 +293,10 @@ const fileManifest = [
   {
     "url": "build/app/n7znxsls.css",
     "revision": "81e6c3bc53b71059762c72404f8615e3"
+  },
+  {
+    "url": "build/app/nnfpy96m.js",
+    "revision": "b2e0c9a9106a842792ed1cd6fdef4368"
   },
   {
     "url": "build/app/o4tnwai4.css",
@@ -3892,7 +3892,7 @@ const fileManifest = [
   },
   {
     "url": "index.html",
-    "revision": "bd176752d97d6fdad712e49806408007"
+    "revision": "8f8e4282093eee2f6e4a18078411fef5"
   }
 ];
 
