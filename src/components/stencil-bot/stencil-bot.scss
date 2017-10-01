@@ -1,5 +1,25 @@
 stencil-bot {
   ion-app {
+    ion-header {
+      ion-toolbar {
+        ion-title {
+          .header-logo {
+            display: flex;
+            justify-content: center;
+            img {
+              height: 50px;
+              width: 50px;
+            }
+            p {
+              margin-left: 10px;
+              margin-bottom: 0;
+              margin-top: 15px;
+              color: #488aff;
+            }
+          }
+        }
+      }
+    }
     ion-content {
       ion-scroll {
         &.content {
