@@ -1,0 +1,13 @@
+{
+    "name": "Elda",
+    "short_name": "Elda",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [{
+      "src": "img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+    "background_color": "#f8f8f8",
+    "theme_color": "#f8f8f8"
+  }

@@ -56,10 +56,7 @@ export class StencilBot {
         <ion-header>
           <ion-toolbar>
           <ion-title text-center>
-            <div class="header-logo">
-              <img src="../assets/ionitron.png"/>
-              <p>Ionitron</p>
-            </div>
+            Elda
           </ion-title>
           </ion-toolbar>
         </ion-header>
@@ -72,7 +69,7 @@ export class StencilBot {
         </ion-content>
         <ion-footer>
           <ion-toolbar>
-            <ion-input placeholder="Send some message to Stenciltron">
+            <ion-input placeholder="Send some message to Elda">
             </ion-input>
             <ion-button onClick={() => this.sendMessage()}>
               Send

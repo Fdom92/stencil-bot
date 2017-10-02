@@ -19,20 +19,16 @@ importScripts('workbox-sw.prod.v2.0.1.js');
  */
 const fileManifest = [
   {
-    "url": "assets/ionitron.png",
-    "revision": "30f07576a40cbd70e472111a97a05c62"
-  },
-  {
     "url": "build/app.global.js",
     "revision": "399623ff387a2a494fbd674e24efa5da"
   },
   {
     "url": "build/app.js",
-    "revision": "f4576ae871198c186717e758a544777c"
+    "revision": "e9e7c6e4ef13cc98bce6e0ad9d012d22"
   },
   {
     "url": "build/app.registry.json",
-    "revision": "4c975b3aa12447f17003c1e9bd925ae3"
+    "revision": "3c370284ca6394947024a3e0f64ff88c"
   },
   {
     "url": "build/app/06ic4yhp.css",
@@ -95,6 +91,10 @@ const fileManifest = [
     "revision": "a202747e5a735a32f182cbeac1f93122"
   },
   {
+    "url": "build/app/9afjhwfw.js",
+    "revision": "fa2885344dc759d52889b21f5169c999"
+  },
+  {
     "url": "build/app/a9zp9z7k.css",
     "revision": "e7c7381ba1df2ca3a3af22e450d726d4"
   },
@@ -111,12 +111,12 @@ const fileManifest = [
     "revision": "1e738872440984a85184a72ff8a1b53d"
   },
   {
-    "url": "build/app/app.aukvt1n6.pf.js",
-    "revision": "060c6720ca22aa5b4f7019b5a1c8a54e"
+    "url": "build/app/app.ar1xu3nb.js",
+    "revision": "a8e93bffef850f122d7dc9c144b5bd60"
   },
   {
-    "url": "build/app/app.jrdjl9th.js",
-    "revision": "6ab77a790a30086b9dedf117ae0b3f49"
+    "url": "build/app/app.hucwkbrl.pf.js",
+    "revision": "9db7deb8c9938ec0096cdf5491578652"
   },
   {
     "url": "build/app/au2o1dlq.css",
@@ -239,10 +239,6 @@ const fileManifest = [
     "revision": "41d76f1454e1864837a07e4a7df01688"
   },
   {
-    "url": "build/app/ibbxoglj.js",
-    "revision": "a6126e47cd8592b1c6632e1791153736"
-  },
-  {
     "url": "build/app/igw1bpbv.css",
     "revision": "b1776bfc76514a034876f7533b9255d6"
   },
@@ -269,6 +265,10 @@ const fileManifest = [
   {
     "url": "build/app/klxg2xer.js",
     "revision": "4c29ff3d0516c2fd0a09c18eb677572e"
+  },
+  {
+    "url": "build/app/kmrv5d1w.css",
+    "revision": "876312f2631b913527ff7788e4c3ada4"
   },
   {
     "url": "build/app/ksufjpux.css",
@@ -3839,10 +3839,6 @@ const fileManifest = [
     "revision": "cf729e38aa1b20dde79c60f2de171daa"
   },
   {
-    "url": "build/app/thubbgaw.css",
-    "revision": "048878636f15bdb82c726ec549f388da"
-  },
-  {
     "url": "build/app/uexh0aux.js",
     "revision": "ed9e4c75de7c4ec3931f69b176dac6cd"
   },
@@ -3896,7 +3892,11 @@ const fileManifest = [
   },
   {
     "url": "index.html",
-    "revision": "c9b36c4a4241a25a7d9849bf404a5324"
+    "revision": "25009a033c11c566bbb912ca2b3a7305"
+  },
+  {
+    "url": "manifest.json",
+    "revision": "fb4c991340020ec819d9fb8c2f8bb847"
   }
 ];
 
